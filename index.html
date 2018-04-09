@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>PENTWB07</title>
+        <style type="text/css">
+            .container{
+                    margin-left: 45%;
+                    margin-top: 04%;
+            }
+            #cadena{
+                    margin-left: -250px;
+                    height: 30px;
+                    width: 650px;
+                    background-color: lightgray;
+                    border-style: inset;
+                    text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Cadena Original</legend>
+        <div class="container">
+            <table>
+                <tr>
+                    <td><strong>Nombre:</strong></td>
+                    <td><input type="text" id="nombre" /></td>
+                </tr>
+                <tr>
+                    <td><strong>RFC:</strong></td>
+                    <td><input type="text" id="rfc" /></td>
+                </tr>
+                <tr>
+                    <td><strong>Tramite:</strong></td>
+                    <td><input type="text" id="tramite" /></td>
+                </tr>
+                <tr>
+                    <td><strong>Ciudad:</strong></td>
+                    <td>
+                        <select id="ciudad">
+                            <option value="Ciudad de Mexico">Ciudad de Mexico</option>
+                            <option value="Toluca">Toluca</option>
+                            <option value="Guadalajara">Guadalajara</option>
+                            <option value="Monterrey">Monterrey</option>
+                            <option value="Queretaro">Queretaro</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <input type="button" value="Capturar" id="btnProcesar" />
+            <br />
+            <strong>Cadena Original:</strong>
+            <br />
+            <div id="cadena"></div>
+        </div>
+       </fieldset>
+       <br />
+       <fieldset>
+           <legend>Ordenar valores</legend>
+           <div class="container">
+             <strong>Ingresar valores numericos separados por coma</strong>
+             <br />
+             <textarea cols="30" rows="5" id="txtIn"></textarea>
+             <br />
+             <input type="button" value="Procesar" id="btnOrdenar"/>
+             <br />
+             <strong>Resultado</strong>
+             <br />
+             <textarea cols="30" rows="5" id="txtOut"></textarea>  
+           </div>
+       </fieldset>
+
+       <script src="bundle.js" ></script>
+    </body>
+</html>
